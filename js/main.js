@@ -29,6 +29,11 @@ let quiz = {
             correctAnswer: 'europe'
         }
     ]
+
+    /* shuffle() {
+        quiz.questions.question[Math.floor(Math.random()*this.questions.length)]
+    }
+    */
 }
 
 

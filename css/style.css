@@ -27,12 +27,17 @@ a {
 
 /* Forside */
 .header-list-item {
-  padding: 0 10px;
+  padding: 0 20px;
   color: #fff;
 }
 
+.header-list-item img {
+  width:20px;
+}
+
 #main {
-  margin: 0 25%;
+  width:100%;
+  height:90%;
   display:flex;
   flex-direction: column;
 }
@@ -48,10 +53,20 @@ a {
 
 }
 
+.index {
+  background-color:#C8DBDF;
+}
+
+h1 {
+  margin-top:80px;
+}
+
 #quiz {
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 80%;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin:50px auto;
 }
 
 #quiz div {
@@ -60,3 +75,67 @@ a {
     flex-direction: column;
     align-items: center;
 }
+
+#quiz p {
+  font-size: 20px;
+}
+
+#quiz1 img, #quiz2 img {
+  width:400px;
+}
+
+#quiz1 a:hover, #quiz2 a:hover {
+  text-decoration:underline;
+}
+
+
+/* ------------------------Quiz 1--------------------------------*/
+
+.quiz1 {
+  background-image: url(../img/sport_v2.jpg);
+  background-size:cover;
+  background-position:0px -50px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin-top:50px;
+  text-align: center;
+  font-weight: normal;
+}
+
+#start_btn {
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+}
+
+#start_quiz {
+  width: 150px;
+  height: 60px;
+  background-color:#76a5af;
+  box-shadow: none;
+  border: none;
+  font-size: 20px;
+  color:#ffffff;
+  text-align: center;
+  margin-top:100px;
+}
+
+/* ------------------------Quiz 2--------------------------------*/
+
+
+.quiz2 {
+  background-image: url(../img/verdenskort_v2.jpg);
+  background-size:100%;
+  background-position:0px -50px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
