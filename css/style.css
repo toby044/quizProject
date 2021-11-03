@@ -80,6 +80,10 @@ h1 {
   font-size: 20px;
 }
 
+#quiz img {
+  border: 5px solid #76a5af;
+}
+
 #quiz1 img, #quiz2 img {
   width:400px;
 }
