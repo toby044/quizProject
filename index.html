@@ -10,38 +10,45 @@
 </head>
 
 <body>
+
   <header id="header">
     <ul id="header-list">
       <a href="index.html">
-        <li class="header-list-item">Home</li>
+        <li class="header-list-item"><img src="img/home-icon.png" alt="house"></li>
       </a>
-      <a href="">
+      <a href="html/quiz1.html">
         <li class="header-list-item">Quiz 1: Sport</li>
       </a>
-      <a href="">
+      <a href="html/quiz2.html">
         <li class="header-list-item">Quiz 2: Geografi</li>
       </a>
     </ul>
   </header>
-  <main id="main">
-    <h1>Velkommen til gruppe 1s quiz-univers</h1>
-    <h3>Du har nu muligheden for at vælge imellem 2 quizzer:</h3>
+
+
+  <main id="main" class="index">
+    <h1>Velkommen til vores Quiz-univers</h1>
+    <h3>Du har mulighed for at vælge imllem vores 2 quizzer:</h3>
+
     <div id="quiz">
-      <div>
+
+      <div id="quiz1">
         <a href="html/quiz1.html">
-          <p>Sport</p>
+          <p>Quiz 1: Sport</p>
         </a>
-        <a href="html/quiz1.html"><img
-            src="https://images.unsplash.com/photo-1510925758641-869d353cecc7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=687&q=80"
-            alt="Billede af sport" width="100%" /></a>
+
+        <a href="html/quiz1.html">
+          <img src="img/sport.jpg" alt="Billede af sport">
+        </a>
       </div>
-      <div>
+
+      <div id="quiz2">
         <a href="html/quiz2.html">
-          <p>Geografi</p>
+          <p>Quiz 2: Geografi</p>
         </a>
-        <a href="html/quiz2.html"><img
-            src="https://images.unsplash.com/photo-1604351888999-9ea0a2851e61?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=686&q=80"
-            alt="Billede af geografi" width="100%" /></a>
+        <a href="html/quiz2.html">
+          <img src="img/verdenskort.jpg" alt="verdenskort">
+        </a>
       </div>
     </div>
     <div id="quiz" class="container quiz">
@@ -54,6 +61,7 @@
 
 
   </main>
+
   <script src="./js/main.js"></script>
 </body>
 
