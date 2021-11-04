@@ -1,35 +1,34 @@
-
 let score = 0;
-// let quiz = {
-//   name: 'test',
-//   created: new Date(),                    testing
-let questions = [
-    {
-        category: 'continent',
-        question: 'on which continent is Denmark located?1',
-        possibleAnswers: ['Europe', 'Asia', 'Africa', 'Antarctica'],
-        correctAnswer: 1
-    },
-    {
-        category: 'continent',
-        question: 'on which continent is Denmark located?2',
-        possibleAnswers: ['Europe', 'Asia', 'Africa', 'Antarctica'],
-        correctAnswer: 3
-    },
-    {
-        category: 'continent',
-        question: 'on which continent is Denmark located?3',
-        possibleAnswers: ['Europe', 'Asia', 'Africa', 'Antarctica'],
-        correctAnswer: 0
-    },
-    {
-        category: 'continent',
-        question: 'on which continent is Denmark located?4',
-        possibleAnswers: ['Europe', 'Asia', 'Africa', 'Antarctica'],
-        correctAnswer: 0
-    }
-]
-//}
+let q = {
+    name: 'test',
+    created: new Date(),
+    questions: [
+        {
+            category: 'continent',
+            question: 'on which continent is Denmark located?1',
+            possibleAnswers: ['Europe', 'Asia', 'Africa', 'Antarctica'],
+            correctAnswer: 1
+        },
+        {
+            category: 'continent',
+            question: 'on which continent is Denmark located?2',
+            possibleAnswers: ['Europe', 'Asia', 'Africa', 'Antarctica'],
+            correctAnswer: 3
+        },
+        {
+            category: 'continent',
+            question: 'on which continent is Denmark located?3',
+            possibleAnswers: ['Europe', 'Asia', 'Africa', 'Antarctica'],
+            correctAnswer: 0
+        },
+        {
+            category: 'continent',
+            question: 'on which continent is Denmark located?4',
+            possibleAnswers: ['Europe', 'Asia', 'Africa', 'Antarctica'],
+            correctAnswer: 0
+        }
+    ]
+}
 
 function init() {
     const quizEl = document.getElementById('quiz')
@@ -37,7 +36,7 @@ function init() {
 
 
     let quizStr = ''
-    questions.forEach(function (questions, qIndex) {
+    q.questions.forEach(function (questions, qIndex) {
         let answerStr = ''
         const answerOrder = randomRange(questions.possibleAnswers.length)
         questions.possibleAnswers.forEach(function (answer, aIndex) {
@@ -113,3 +112,36 @@ function randomRange(x) {
     return randomArr
 
 }
+
+
+
+
+
+
+
+// Kravet er, at I skal lave et site med mindst to quizzer.
+// JavaScripten skal struktureres med moduler, så
+// HTML - siden kun refererer én JavaScript - fil.
+// De to quizzer skal strukturelt være ens, så den
+// JavaScript - kode, der viser quizzerne skal være ens. 
+// Det betyder, at der skal skrives en funktion der 
+// modtager en quiz som inputparameter, hvorefter den
+// viser quizzen.Fx
+
+// const displayQuiz = function (quiz, where) { };
+
+// Funktionen skal kalde quizzens toString metode.Den 
+// skal selv kunne kaldes således:
+
+// displayQuiz(quiz1, div1);
+// displayQuiz(quiz2, div2);
+// displayQuiz(quizn, divn);
+
+// Hvor quiz1 - quizn er konkrete eksempler på den 
+// ovenfor viste datastruktur, og div1 - divn er id’er 
+// på de dom - elementer på siden, hvor quizzen skal stå.
+// Når en quiz vises, skal metoden shuffle() sørge for,
+//     at spørgsmålene vises i tilfældig rækkefølge.
+// Quizzerne skal kunne scores.Scoren skal anbringes i 
+// localstorage således, at en besvarer, skal kunne se 
+// sin score ved genbesøg på siden.
